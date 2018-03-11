@@ -85,11 +85,11 @@ void checkButtonC(){
 }
 
 void checkRun(){
-    if(nunchuk_joystickY() > 100 && !isShiftPressed){
+    if(nunchuk_joystickY() > 120 && !isShiftPressed){
     // press left
     Keyboard.press(KEY_LEFT_SHIFT);
     isShiftPressed = true;
-  } else if(nunchuk_joystickY() <= 100 && isShiftPressed){
+  } else if(nunchuk_joystickY() <= 120 && isShiftPressed){
     Keyboard.release(KEY_LEFT_SHIFT);
     isShiftPressed = false;
   }
@@ -168,4 +168,4 @@ void loop() {
     } 
     delay(100);
 }
-// 
+//
