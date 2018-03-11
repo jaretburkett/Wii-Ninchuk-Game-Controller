@@ -103,11 +103,11 @@ void checkButtonC(){
    // c button
     if(nunchuk_buttonC() == 1 && !isCPressed){
       // first press
-      Keyboard.press('r');
+      Keyboard.press(KEY_TAB);
       isCPressed = true;
     } else if(nunchuk_buttonC() == 0 && isCPressed){
       // first release
-      Keyboard.release('r');
+      Keyboard.release(KEY_TAB);
       isCPressed = false;
     }
 }
